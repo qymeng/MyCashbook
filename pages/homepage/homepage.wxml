@@ -1,0 +1,19 @@
+<!--pages/homepage/homepage.wxml-->
+<view>pages/homepage/homepage.wxml</view>
+<view class='histogram'>
+  <view class='item day' style='height:{{heightOfDay}};'>
+    <view class='content'>
+      day
+    </view>
+  </view>
+  <view class='item week' style='height:{{heightOfWeek}};'>
+    <view class='content'>
+      week
+    </view>
+  </view>
+  <view class='item month' style='height:{{heightOfMonth}}'>
+    <view class='content'>
+      month
+    </view>
+  </view>
+</view>

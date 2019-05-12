@@ -1,0 +1,37 @@
+/* pages/homepage/homepage.wxss */
+
+.histogram {
+  height: 400px;
+  width: 100%;
+  background-color: #aaa;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.item {
+  width: 34%;
+  border: 1rpx solid #aaa;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.day {
+  background-color: #37c6c0;
+}
+
+.week {
+  background-color: #1db0b8;
+}
+
+.month {
+  background-color: #00343f;
+}
+
+.content {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 100rpx;
+}
