@@ -127,5 +127,11 @@ Page({
 
   onClickButton2: function () {
     this.readData();
+  },
+  
+  navtoAnalysis: function () {
+    wx.navigateTo({
+      url: '/pages/analysis/analysis',
+    })
   }
 })

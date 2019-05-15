@@ -1,1 +1,17 @@
 /* pages/analysis/analysis.wxss */
+.row {
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #777777;
+  
+  display: flex;
+  flex-direction: row;
+  
+}
+.tab{
+  height: 30px;
+  width: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}

@@ -9,7 +9,17 @@
   align-items: flex-end;
   justify-content: space-around;
 }
-
+.buttonList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pieLink{
+  height: 50px;
+  width: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .item {
   width: 34%;
   border: 1rpx solid #aaa;

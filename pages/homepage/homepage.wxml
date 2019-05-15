@@ -18,5 +18,9 @@
   </view>
 </view>
 <view>testdata {{dayUsed}}/{{dailyBudget}}</view>
+
+<view class='buttonList'>
+<image src='../../image/pie.jpg' class='pieLink' bindtap='navtoAnalysis'></image>
 <button bindtap='onClickButton'>testbutton -1daily {{_test}}</button>
 <button bindtap='onClickButton2'>testbutton readfile {{_test}}</button>
+</view>
