@@ -1,1 +1,13 @@
 /* pages/addRecords/addRecords.wxss */
+.lineContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  width: 20%;
+}
+.tab{
+  height: 50px;
+  width: 70px;
+}

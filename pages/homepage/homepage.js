@@ -73,6 +73,7 @@ Page({
 
   },
 
+  //6个数据的读写
   writeData:function(){
     var fsm = wx.getFileSystemManager();
     var data = this.data;
@@ -105,6 +106,7 @@ Page({
   },
 
 
+  //两个测试函数
   onClickButton: function(){
     var fsm= wx.getFileSystemManager();
     var newDayUsed=this.data.dayUsed;
@@ -128,7 +130,7 @@ Page({
   onClickButton2: function () {
     this.readData();
   },
-  
+  //一系列跳转操作
   navtoAnalysis: function () {
     wx.navigateTo({
       url: '/pages/analysis/analysis',
@@ -152,6 +154,11 @@ Page({
   navtoSettings: function () {
     wx.navigateTo({
       url: '/pages/settings/settings',
+    })
+  },
+  navtoAddRecords:function(){
+    wx.navigateTo({
+      url: '/pages/addRecords/addRecords',
     })
   }
 })

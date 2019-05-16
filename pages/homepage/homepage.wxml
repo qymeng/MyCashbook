@@ -27,6 +27,6 @@
 
 <view class='buttonList'>
 <image src='../../image/pie.jpg' class='pieLink' bindtap='navtoAnalysis'></image>
-<button bindtap='onClickButton'>testbutton -1daily {{_test}}</button>
+<button bindtap='navtoAddRecords'>新记录</button>
 <image src='../../image/pie.jpg' class='settingsLink' bindtap='navtoSettings'></image>
 </view>

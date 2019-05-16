@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    selectImg1: ['/image/pie.jpg', '/image/pie.jpg', '/image/pie.jpg', '/image/pie.jpg', '/image/pie.jpg'], //第一行的图片目录
+    selectName1: ["食物", "饮品", "交通", "购物", "娱乐"],//第一行的名称
+    selectImg2: ['/image/pie.jpg', '/image/pie.jpg', '/image/pie.jpg', '/image/pie.jpg', '/image/pie.jpg'],//第二行的图片目录
+    selectName2: ["居家", "数码", "医药", "其他", "收入"],//第二行的名称
   },
 
   /**

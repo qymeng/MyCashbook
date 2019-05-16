@@ -1,2 +1,19 @@
 <!--pages/addRecords/addRecords.wxml-->
 <text>pages/addRecords/addRecords.wxml</text>
+<view   class='lineContainer'>
+  <view wx:for="{{selectName1}}" wx:key="index" class='item'>
+  <image src="{{selectImg1[index]}}" class='tab'></image>
+  <view style='text-align: center'>{{selectName1[index]}}</view>
+  </view>
+</view>
+
+<view   class='lineContainer'>
+  <view wx:for="{{selectName2}}" wx:key="index" class='item'>
+  <image src="{{selectImg2[index]}}" class='tab'></image>
+  <view style='text-align: center'>{{selectName2[index]}}</view>
+  </view>
+</view>
+<view   class='lineContainer'>
+<view>备注：</view>
+<input></input>
+</view>

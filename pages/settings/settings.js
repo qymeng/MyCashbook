@@ -14,6 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //读首页数据
     var pages = getCurrentPages();
     var homePage = pages[0];
     var that = this;
@@ -73,6 +74,7 @@ Page({
 
   },
   accept:function(){
+    //写回首页
     var pages = getCurrentPages();
     var homePage = pages[0];
     var that=this;
