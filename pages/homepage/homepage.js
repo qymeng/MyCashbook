@@ -133,5 +133,25 @@ Page({
     wx.navigateTo({
       url: '/pages/analysis/analysis',
     })
+  },
+  navtoDay: function () {
+    wx.navigateTo({
+      url: '/pages/dailyBudget/dailyBudget',
+    })
+  },
+  navtoWeek: function () {
+    wx.navigateTo({
+      url: '/pages/weeklyBudget/weeklyBudget',
+    })
+  },
+  navtoMonth: function () {
+    wx.navigateTo({
+      url: '/pages/monthlyBudget/monthlyBudget',
+    })
+  },
+  navtoSettings: function () {
+    wx.navigateTo({
+      url: '/pages/settings/settings',
+    })
   }
 })

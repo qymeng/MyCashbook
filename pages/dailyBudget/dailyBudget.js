@@ -5,14 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    used:0,
+    budget:1,
+    usedFixed:"",
+    budgetFixed:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var pages = getCurrentPages();
+    var homePage = pages[0];
+    var u = homePage.data.dayUsed;
+    var b = homePage.data.dailyBudget;
+    this.setData({used:u,budget:b,usedFixed:u.toFixed(2),budgetFixed:b.toFixed(2)});
   },
 
   /**

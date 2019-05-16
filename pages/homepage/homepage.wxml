@@ -1,19 +1,25 @@
 <!--pages/homepage/homepage.wxml-->
 <view>pages/homepage/homepage.wxml</view>
 <view class='histogram'>
-  <view class='item day' style='height:{{(dailyBudget-dayUsed)*390/dailyBudget}}px'>
-    <view class='content'>
-      day
+  <view class='itemContainer' bindtap='navtoDay'>
+    <view class='item day' style='height:{{(dailyBudget-dayUsed)*100/dailyBudget}}%'>
+      <view class='content'>
+        day
+      </view>
     </view>
   </view>
-  <view class='item week' style='height:{{(weeklyBudget-weekUsed)*390/weeklyBudget}}px'>
-    <view class='content'>
-      week
+  <view class='itemContainer' bindtap='navtoWeek'>
+    <view class='item week' style='height:{{(weeklyBudget-weekUsed)*100/weeklyBudget}}%'>
+      <view class='content'>
+        week
+      </view>
     </view>
   </view>
-  <view class='item month' style='height:{{(monthlyBudget-monthUsed)*390/monthlyBudget}}px'>
-    <view class='content'>
-      month
+  <view class='itemContainer' bindtap='navtoMonth'>
+    <view class='item month' style='height:{{(monthlyBudget-monthUsed)*100/monthlyBudget}}%'>
+      <view class='content'>
+        month
+      </view>
     </view>
   </view>
 </view>
@@ -22,5 +28,5 @@
 <view class='buttonList'>
 <image src='../../image/pie.jpg' class='pieLink' bindtap='navtoAnalysis'></image>
 <button bindtap='onClickButton'>testbutton -1daily {{_test}}</button>
-<button bindtap='onClickButton2'>testbutton readfile {{_test}}</button>
+<image src='../../image/pie.jpg' class='settingsLink' bindtap='navtoSettings'></image>
 </view>

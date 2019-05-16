@@ -5,14 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    day:0.00,
+    week:0.00,
+    month:0.00
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var pages = getCurrentPages();
+    var homePage = pages[0];
+    var that = this;
+    this.setData({
+      day:homePage.data.dailyBudget,
+      week: homePage.data.weeklyBudget,
+      month:homePage.data.monthlyBudget
+    });
   },
 
   /**
@@ -62,5 +71,36 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  accept:function(){
+    var pages = getCurrentPages();
+    var homePage = pages[0];
+    var that=this;
+    homePage.setData({ dailyBudget:that.data.day,
+      weeklyBudget:that.data.week,
+      monthlyBudget:that.data.month});
+    wx.navigateBack({
+      delta: 1
+    });
+  },
+  cancel:function(){
+    wx.navigateBack({
+      delta:1
+    });
+  },
+  setDay:function(e){
+    this.setData({
+      day: +e.detail.value+0.00
+    })
+  },
+  setWeek:function(e){
+    this.setData({
+      week: +e.detail.value + 0.00
+    })
+  },
+  setMonth:function(e){
+    this.setData({
+      month: +e.detail.value + 0.00
+    })
   }
 })

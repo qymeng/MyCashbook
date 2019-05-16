@@ -20,8 +20,23 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-.item {
+.settingsLink{
+  height: 50px;
+  width: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.itemContainer {
   width: 34%;
+  height: 100%;
+  border: 1rpx solid #aaa;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.item {
+  width: 100%;
   border: 1rpx solid #aaa;
   display: flex;
   flex-direction: column-reverse;

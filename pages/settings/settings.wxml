@@ -1,2 +1,25 @@
 <!--pages/settings/settings.wxml-->
 <text>pages/settings/settings.wxml</text>
+<view class='titleContainer'>
+<view class='title'> 预算设置 </view>
+</view>
+<view class='settingContainer'>
+<view class='settingsText alignCenter'> month </view>
+<input class='settingsInput alignCenter' type='digit' placeholder='{{month}}' bindinput='setMonth'> </input>
+</view>
+
+<view class='settingContainer'>
+<view class='settingsText alignCenter'> week </view>
+<input class='settingsInput alignCenter' type='digit' placeholder='{{week}}' bindinput='setWeek'> </input>
+</view>
+
+<view class='settingContainer'>
+<view class='settingsText alignCenter'> day </view>
+<input class='settingsInput alignCenter' type='digit' placeholder='{{day}}' bindinput='setDay'> </input>
+</view>
+
+
+<view class='buttonContainer'>
+<image src='../../image/pie.jpg' class='img accept' bindtap='accept'></image>
+<image src='../../image/pie.jpg' class='img cancel' bindtap='cancel'></image>
+</view>

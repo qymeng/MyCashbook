@@ -1,1 +1,64 @@
 /* pages/settings/settings.wxss */
+.title {
+  align-items: center;
+  font-size: 30px;
+  color:#00343f;
+  font-family: "黑体";
+  letter-spacing: 10px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  border-bottom-style:dashed;
+  border-bottom-color: #00343f;
+}
+.settingContainer {
+  margin-top:5%;
+  margin-bottom:5%;
+  display: flex;
+  flex-direction: row;
+}
+.alignCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settingsText{
+  font-size: 130%;
+  color:#00343f;
+  width: 40%;
+}
+.settingsInput{
+  width: 60%;
+  border:2px;
+  border-style:solid;
+  border-color: #666666;
+  border-radius: 10px;
+  margin:5%;
+  padding: 8px;
+  text-align: right;
+}
+
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items:  center;
+}
+.img{
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.accept{
+  width: 50%;
+  margin-right: 20%;
+}
+.cancel{
+  width: 50%;
+  margin-left: 20%;
+}

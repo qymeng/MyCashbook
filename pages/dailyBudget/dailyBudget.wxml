@@ -1,2 +1,19 @@
 <!--pages/dailyBudget/dailyBudget.wxml-->
 <text>pages/dailyBudget/dailyBudget.wxml</text>
+<view class='center'>
+<view class='fontStyle' style='margin-top:20%;'>￥{{usedFixed}}</view>
+<view class='fontStyle' style='margin-top:20%;margin-bottom:20%;'>本日剩余</view>
+</view>
+<view class='row budgetBar'> 
+<view class='usedBar' style='width:{{used*100/budget}}%'></view>
+</view>
+
+<view class='row textRow'>
+<view style='margin-left: 5%;width: 60%;color:#37c6c0;'>已使用</view>
+<view>￥{{usedFixed}}</view>
+</view>
+
+<view class='row textRow'>
+<view style='margin-left: 5%; width: 60%;color:#37c6c0;'>预算</view>
+<view>￥{{usedFixed}}</view>
+</view>

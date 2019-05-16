@@ -1,1 +1,32 @@
 /* pages/dailyBudget/dailyBudget.wxss */
+.row {
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #777777;
+  
+  display: flex;
+  flex-direction: row;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+}
+.budgetBar {
+  height: 50px;
+  background-color: #37c6c0;
+}
+.usedBar {
+  background-color: #60e2dc;
+}
+.fontStyle {
+  font-size: 30px;
+  color:#37c6c0;
+  font-family: "黑体";
+  letter-spacing: 10px;
+}
+.textRow {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
