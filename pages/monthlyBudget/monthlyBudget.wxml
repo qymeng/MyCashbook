@@ -1,2 +1,3 @@
 <!--pages/monthlyBudget/monthlyBudget.wxml-->
-<text>pages/monthlyBudget/monthlyBudget.wxml</text>
+<import src='/templates/budget' />
+<template is='budget' data='{{budget,used,remaining,budgetFixed,usedFixed,remainingFixed,type,themeColor}}'></template>

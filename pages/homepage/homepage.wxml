@@ -1,19 +1,34 @@
 <!--pages/homepage/homepage.wxml-->
-<view>pages/homepage/homepage.wxml</view>
-<view class='histogram'>
-  <view class='item day' style='height:{{heightOfDay}};'>
-    <view class='content'>
-      day
+<view class='histogram' style='height:{{histogramHeight}}px'>
+  <view class='itemContainer' bindtap='navtoDay'>
+    <view class='item day' style='height:{{dayHeight}}%'>
+      <view class='content'>
+        day
+      </view>
     </view>
   </view>
-  <view class='item week' style='height:{{heightOfWeek}};'>
-    <view class='content'>
-      week
+  <view class='itemContainer' bindtap='navtoWeek'>
+    <view class='item week' style='height:{{weekHeight}}%'>
+      <view class='content'>
+        week
+      </view>
     </view>
   </view>
-  <view class='item month' style='height:{{heightOfMonth}}'>
-    <view class='content'>
-      month
+  <view class='itemContainer' bindtap='navtoMonth'>
+    <view class='item month' style='height:{{monthHeight}}%'>
+      <view class='content'>
+        month
+      </view>
     </view>
   </view>
+</view>
+<view class='buttonList' style='height:{{menuHeight}}px'>
+  <view class='fa fa-pie-chart fa-3x button' bindtap='navtoAnalysis'></view>
+  <view>
+    <button bindtap='navtoAddRecords' style='border:1px solid;'>
+      <view class='fa fa-plus-square fa-lg'></view>
+      <text decode='{{true}}'>&nbsp;新记录</text>
+    </button>
+  </view>
+  <view class='fa fa-align-justify fa-3x button' bindtap='navtoSettings'></view>
 </view>

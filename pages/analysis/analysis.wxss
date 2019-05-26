@@ -1,1 +1,58 @@
 /* pages/analysis/analysis.wxss */
+
+page {
+  height: 100%;
+}
+
+.headerBarContainer {
+  height: 10%;
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonSwitch {
+  color: #ff9800;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.chartContainer {
+  height: 50%;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.barChart {
+}
+
+.pieChart {
+}
+
+.row {
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #777;
+  display: flex;
+  flex-direction: row;
+}
+
+.tab {
+  height: 30px;
+  width: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}

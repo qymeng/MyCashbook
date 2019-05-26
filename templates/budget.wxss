@@ -1,0 +1,61 @@
+/* templates/budget.wxss */
+
+page {
+  height: 100%;
+  border-top: 2px #007196 dashed;
+}
+
+.alignCenter {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.returnContainer {
+  height: 10%;
+  width: 100%;
+}
+
+.barContainer {
+  height: 15%;
+  width: 100%;
+  text-align: center;
+}
+
+.fontStyle {
+  text-align: center;
+  font-size: 30px;
+  font-family: "PingFangSC-Medium";
+}
+
+progress {
+  height: 20%;
+  width: 100%;
+  border-radius: 500px;
+  overflow: hidden;
+}
+
+.itemContainer {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.itemTitle {
+  width: 30%;
+  text-align: center;
+  font-family: "PingFangSC-Medium";
+}
+
+.itemContent {
+  width: 60%;
+  text-align: right;
+}
+
+.digit {
+  font-family: "Courier New";
+}

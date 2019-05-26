@@ -1,37 +1,61 @@
 /* pages/homepage/homepage.wxss */
 
+page {
+  height: 100%;
+  border-top: 2px #007196 dashed;
+}
+
 .histogram {
-  height: 400px;
   width: 100%;
-  background-color: #aaa;
+  background-color: rgba(190, 238, 240, 0.8);
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: space-around;
 }
 
-.item {
+.itemContainer {
   width: 34%;
-  border: 1rpx solid #aaa;
+  height: 100%;
+  border: 1rpx solid #009688;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.item {
+  width: 100%;
+  border: 1rpx solid #009688;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
 
 .day {
-  background-color: #37c6c0;
+  background-color: rgba(55, 198, 192, 0.71);
 }
 
 .week {
-  background-color: #1db0b8;
+  background-color: rgba(29, 176, 184, 0.79);
 }
 
 .month {
-  background-color: #00343f;
+  background-color: rgba(5, 81, 106, 0.68);
 }
 
 .content {
   color: #fff;
   font-size: 32px;
   margin-bottom: 100rpx;
+}
+
+.buttonList {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  color: rgba(0, 113, 150, 0.73);
 }

@@ -1,2 +1,28 @@
 <!--pages/settings/settings.wxml-->
-<text>pages/settings/settings.wxml</text>
+<view class='titleContainer'>
+  <view class='title'>
+    预算设置
+  </view>
+</view>
+<view class='settingContainer'>
+  <view class='settingTitle'>month</view>
+  <view>
+    <input class='settingInput' type='digit' placeholder='￥{{month}}' bindinput='setMonth' />
+  </view>
+</view>
+<view class='settingContainer'>
+  <view class='settingTitle'>week</view>
+  <view>
+    <input class='settingInput' type='digit' placeholder='￥{{week}}' bindinput='setWeek' />
+  </view>
+</view>
+<view class='settingContainer'>
+  <view class='settingTitle'>day</view>
+  <view>
+    <input class='settingInput' type='digit' placeholder='￥{{day}}' bindinput='setDay' />
+  </view>
+</view>
+<view class='buttonContainer'>
+  <view class='fa fa-check fa-3x icon' bindtap='accept'></view>
+  <view class='fa fa-close fa-3x icon' bindtap='cancel'></view>
+</view>

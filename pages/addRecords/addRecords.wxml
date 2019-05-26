@@ -1,2 +1,25 @@
 <!--pages/addRecords/addRecords.wxml-->
-<text>pages/addRecords/addRecords.wxml</text>
+<view class='priceContainer'>
+  <view class='fa fa-times fa-2x icon unchecked'></view>
+  <view class='inputContainer'>
+    <view class='fa fa-rmb fa-2x icon unchecked'></view>
+    <input type='digit' placeholder='15' placeholder-class='placeholderStyle' bindinput='setPrice' />
+  </view>
+</view>
+<view class='menuContainer'>
+  <view class='lineContainer'>
+    <view class='item' wx:for="{{selectName1}}" wx:key="index">
+      <view class='fa {{selectIcon0[index]}} fa-2x icon unchecked'></view>
+      <view class='itemName'>{{selectName0[index]}}</view>
+    </view>
+  </view>
+  <view class='lineContainer'>
+    <view class='item' wx:for="{{selectName1}}" wx:key="index">
+      <view class='fa {{selectIcon1[index]}} fa-2x icon unchecked'></view>
+      <view class='itemName'>{{selectName1[index]}}</view>
+    </view>
+  </view>
+</view>
+<view class='psContainer'>
+  <input class='input' placeholder-style='font-size:15px' placeholder='晚餐(点击以编辑)' auto-focus='true' />
+</view>

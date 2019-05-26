@@ -1,2 +1,28 @@
 <!--pages/analysis/analysis.wxml-->
-<text>pages/analysis/analysis.wxml</text>
+<view class='headerBarContainer'>
+  <view class='fa fa-arrow-left fa-2x' bindtap='return'></view>
+  <view class='fa {{flagChart?"fa-pie-chart":"fa-bar-chart"}} fa-2x buttonSwitch' bindtap='switch'></view>
+</view>
+<view class='chartContainer'>
+  <view class='{{flagChart?"show":"hide"}} '>
+    <canvas class='barChart' canvas-id='barChart'></canvas>
+  </view>
+  <view class='{{flagChart?"hide":"show"}} '>
+    <canvas class='pieChart' canvas-id='pieChart'></canvas>
+  </view>
+</view>
+
+<!-- <view class='row' style='justify-content: center;'>
+  <picker mode='date' fields='month' bindchange="bindPickerChange">已选择：{{selectYear}}年{{selectMonth}}月</picker>
+</view>
+<view class='row'>
+  <image src='../../image/pie.jpg' class='tab'></image>
+  <view style='width: 50%'>收 入</view>
+  <view>￥{{incomeDigit}}</view>
+</view>
+
+<view wx:for="{{expItemName}}" wx:key="index" class='row'>
+  <image src='../../image/pie.jpg' class='tab'></image>
+  <view style='width: 50%'>{{expItemName[index]}}</view>
+  <view>￥{{expDigit[index]}}</view>
+</view> -->

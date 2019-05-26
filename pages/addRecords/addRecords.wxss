@@ -1,1 +1,67 @@
 /* pages/addRecords/addRecords.wxss */
+
+page {
+  height: 100%;
+  background-color: rgba(190, 238, 240, 0.33);
+  border-top: 2px #007196 dashed;
+}
+
+.priceContainer {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.unchecked {
+  color: rgba(0, 113, 150, 0.73);
+}
+
+.checked {
+  color: rgba(96, 219, 39, 0.623);
+}
+
+.placeholderStyle {
+  color: rgba(0, 113, 150, 0.73);
+  font-size: 30px;
+  font-family: "Courier New";
+  text-align: right;
+}
+
+.inputContainer {
+  margin-left: 20%;
+  height: 10%;
+  width: 30%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuContainer {
+  border-top: 2px rgba(0, 113, 150, 0.73) solid;
+  border-bottom: 2px rgba(0, 113, 150, 0.73) solid;
+}
+
+.lineContainer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.item {
+  height: 30%;
+  width: 20%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.itemName {
+  text-align: center;
+  color: rgba(0, 113, 150, 0.73);
+}
